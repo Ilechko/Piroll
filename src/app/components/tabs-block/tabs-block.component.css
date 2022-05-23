@@ -1,5 +1,6 @@
-.container {
+:host {
   width: 100%;
+  display: block;
   margin: 100px 0 0;
   padding: 100px 0px 100px 0px;
   background-color: #f5f5f5;
@@ -45,7 +46,6 @@ img.diamond {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
   white-space: pre-line;
@@ -71,7 +71,6 @@ img.arc {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }
@@ -96,7 +95,6 @@ img.phone {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }
@@ -121,7 +119,6 @@ img.joy {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }
@@ -147,7 +144,6 @@ img.plane {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }
@@ -172,7 +168,6 @@ img.star {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }
@@ -197,7 +192,6 @@ img.magic-wand {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }
@@ -222,7 +216,6 @@ img.paint-bucket {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }

@@ -1,11 +1,12 @@
-.container {
-  width: 100%;
+:host {
+  padding: 0 30px 0 30px;
+  display: block;
 }
 
 .video-container {
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -22,13 +23,32 @@
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.08px;
   text-align: center;
   color: #787878;
 }
 
 .video {
-  width: 85.65vw;
-  height: calc(85.65vw * 0.488);
+  width: 100%;
+  height: 50vh;
   background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-play {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  background-color: #10c9c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 0.5vw;
+  border-top: 1vw solid transparent;
+  border-bottom: 1vw solid transparent;
+  border-left: 1.5vw solid #fff;
 }
