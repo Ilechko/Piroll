@@ -1,125 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    size: 100%;
+} 
 
-@font-face {
-  font-family: NunitoSans;
-  src: local(NunitoSans-Regular),
-    url(/path/to/NunitoSans-Regular.woff2) format("woff2"),
-    url(/path/to/NunitoSans-Regular.woff) format("woff"),
-    url(/path/to/NunitoSans-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+.navbar {
+    margin: 30px 100px 0 100px;
+    background-color: rgb(229, 229, 229);
+    height: 600px;
 }
 
-.container {
-  display: flex;
-  background-color: #e9e9e9;
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
 }
 
-img.logo {
-  width: 31px;
-  height: 25px;
-  margin: 38px 0px 607px 98px;
-  object-fit: contain;
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 30px 100px 0 100px;
 }
 
-.upMenu {
-  margin: 45px 97px 0px 524px;
-
+.menu-link-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 50%;
+    margin: 30px 100px 0 100px;
 }
 
-.upMenu ul {
-  list-style: none;
-  /*забираємо маркери списка*/
-  margin: 0;
-  /*забираємо верхнє і нижнє поле, що дорівнює 1em*/
-  padding-left: 0;
-  /*забираємо лівий відступ, що дорівнює 40px*/
-  position: relative;
-  display: flex;
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: small;
 }
 
-.upMenu ul li {
-  display: inline-block;
-  margin: 0px 23px 0px 0px;
+.home-link {
+    color:#10c9c3;
 }
 
-.upMenu>ul li a {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
+.nav-bord {
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
 }
 
-.home,
-.about,
-.work,
-.process,
-.services,
-.testimonials,
-.contact {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: 1.2px;
-  text-align: left;
-  color: #191919;
+.info-image-content {
+    width: 50%;
 }
 
-.text-style-1 {
-  color: #10c9c3;
+.relevant-info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6%;
+}
+
+.relevant-inf-title {
+    margin: 0;
+}
+
+.relevant-info-description-content {
+    box-sizing: border-box;
+    width: 70%;
+    margin: 7% 0;
 }
 
 
-h1 {
-  margin: 180px 148px 0px 634px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.26;
-  letter-spacing: 0.38px;
-  text-align: left;
-  color: #1d1d1d;
-}
-
-p {
-  margin: 32px 124px 0px 639px;
-  font-family: NunitoSans;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.56;
-  letter-spacing: 0.09px;
-  text-align: left;
-  color: #787878;
-}
-
-.bg {
-  width: 180px;
-  height: 54px;
-  text-decoration: none;
-  margin: 39px 418px 0px 639px;
-  background-color: #10c9c3;
-  border: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-us {
-  font-family: 'Montserrat';
-  font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 7;
-  letter-spacing: 1.2px;
-  text-align: left;
-  color: #ffffff;
-  text-transform: uppercase;
+.relevant-info-contact-button-component {
+    width: 150px;
+    height: 50px;
+    background-color: #10c9c3;
+    color: white;
+    border: none;
 }
