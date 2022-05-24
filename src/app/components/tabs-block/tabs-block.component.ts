@@ -25,6 +25,21 @@ export class TabsBlockComponent implements OnInit {
   descriptionPaintBucket = "Whales likeness hath, man kind for them air two won't"
 
 
+  source = [
+    {
+      title: 'ui / ux design',
+      description: 'Be set fourth land god darkness make it wherein own',
+      src: '/assets/pictures/pe-7-s-diamond.png',
+      alt: 'diamond'
+    },
+    // перерахуй всі інші обєкти і виведи їх за допомогою ngFor
+    // Так html документ буде менший і читабельніший
+    {
+
+    }
+  ]
+
+
   constructor() { }
 
   ngOnInit(): void {

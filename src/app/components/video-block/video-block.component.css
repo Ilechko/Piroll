@@ -39,6 +39,7 @@
 .button-play {
   width: 7vw;
   height: 7vw;
+  /* те саме шо і з margin. Для малих величин не використовуй vw i vh */
   border-radius: 50%;
   background-color: #10c9c3;
   display: flex;
@@ -48,7 +49,9 @@
 
 .arrow {
   margin-left: 0.5vw;
+  /* margin не роби в vw/ або rem em або px */
   border-top: 1vw solid transparent;
   border-bottom: 1vw solid transparent;
   border-left: 1.5vw solid #fff;
+  /* те саме для border */
 }

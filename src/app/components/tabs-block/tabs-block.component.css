@@ -10,9 +10,11 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  /* width: 100%; i  justify-content: space-evenly; точно потрібні ?*/
   align-items: baseline;
 }
 
+/* створи спільний клас для всіх цих контейнерів. Вони одинаково виглядають не потрібно для них створювати окремий клас */
 .container-diamond,
 .container-arc,
 .container-phone,
@@ -31,6 +33,7 @@ img.diamond {
   height: 39px;
   
 }
+/* зайвий пробіл */
 
 .title-diamond {
   font-family: 'Montserrat', sans-serif;
