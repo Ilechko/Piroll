@@ -3,12 +3,6 @@
   display: block;
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .title {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -27,7 +21,7 @@
   color: #787878;
 }
 
-.video {
+.video-container {
   width: 100%;
   height: 50vh;
   background-color: #e9e9e9;
@@ -37,9 +31,8 @@
 }
 
 .button-play {
-  width: 7vw;
-  height: 7vw;
-  /* те саме шо і з margin. Для малих величин не використовуй vw i vh */
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   background-color: #10c9c3;
   display: flex;
@@ -48,10 +41,8 @@
 }
 
 .arrow {
-  margin-left: 0.5vw;
-  /* margin не роби в vw/ або rem em або px */
-  border-top: 1vw solid transparent;
-  border-bottom: 1vw solid transparent;
-  border-left: 1.5vw solid #fff;
-  /* те саме для border */
+  margin-left: 5px;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid #fff;
 }
