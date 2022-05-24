@@ -6,33 +6,20 @@
   background-color: #f5f5f5;
 }
 
-.container-row {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   align-items: baseline;
 }
 
-.container-diamond,
-.container-arc,
-.container-phone,
-.container-joy,
-.container-plane,
-.container-star,
-.container-magic-wand,
-.container-paint-bucket {
+.tabs {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-img.diamond {
-  width: 42px;
-  height: 39px;
-  
-}
-
-.title-diamond {
+.title {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -42,177 +29,7 @@ img.diamond {
   color: #191919;
 }
 
-.description-diamond {
-  font-family: NunitoSans;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #787878;
-  white-space: pre-line;
-}
-
-
-img.arc {
-  width: 40px;
-  height: 40px;
-}
-
-.title-arc {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #191919;
-}
-
-.description-arc {
-  font-family: NunitoSans;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #787878;
-}
-
-
-img.phone {
-  width: 26px;
-  height: 44px;
-}
-
-.title-phone {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #191919;
-}
-
-.description-phone {
-  font-family: NunitoSans;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #787878;
-}
-
-
-img.joy {
-  width: 44px;
-  height: 42px;
-}
-
-.title-joy {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #191919;
-}
-
-.description-joy {
-  font-family: NunitoSans;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #787878;
-}
-
-
-
-img.plane {
-  width: 44px;
-  height: 44px;
-}
-
-.title-plane {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #191919;
-}
-
-.description-plane {
-  font-family: NunitoSans;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #787878;
-}
-
-
-img.star {
-  width: 44px;
-  height: 41px;
-}
-
-.title-star {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #191919;
-}
-
-.description-star {
-  font-family: NunitoSans;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #787878;
-}
-
-
-img.magic-wand {
-  width: 39px;
-  height: 40px;
-}
-
-.title-magic-wand {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #191919;
-}
-
-.description-magic-wand {
-  font-family: NunitoSans;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #787878;
-}
-
-
-img.paint-bucket {
-  width: 43px;
-  height: 46px;
-}
-
-.title-paint-bucket {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: center;
-  color: #191919;
-}
-
-.description-paint-bucket {
+.description {
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
