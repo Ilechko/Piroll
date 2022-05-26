@@ -1,5 +1,6 @@
-.container {
+:host {
   width: 100%;
+  display: block;
   background-color: #10c9c3;
   display: flex;
   flex-direction: column;
@@ -9,9 +10,7 @@
 }
 
 .title {
-  /* margin: 178px 281px 35px 278px;  */
-  /* Як правильно виставити відступи тексту щоб не було коряво при зміні розміру екрану? */
-  width: calc(100vw * 0.6);
+  width: 70vw;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -26,7 +25,7 @@
   letter-spacing: 0.3px;
 }
 
-.autor {
+.author {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -43,7 +42,8 @@
   align-items: center;
 }
 
-.circle, .circle-active {
+.circle,
+.circle-active {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -56,6 +56,5 @@
   height: 10px;
   margin-left: 9px;
   margin-right: 9px;
-  border-radius: 50%;
   background-color: #fff;
 }
