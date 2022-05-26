@@ -1,21 +1,19 @@
-<div class="container">
-    <h2 class="main-title">
-        {{mainTitle}}
-    </h2>
-    <p class="description">
-        {{description}}
-    </p>
-    <form class="form-my" action="/action_page.php">
-        <div class="one-row">
-            <input type="text" class="name" name="name" placeholder="Your Name" size="20">
-            <input type="email" class="email" name="email" placeholder="Your Email"><br><br>
-        </div>
-        <input type="text" class="title" name="title" placeholder="Your Title" size="20"><br><br>
-        <textarea class="comment" name="comment" placeholder="Your Comment"></textarea><br><br>
-        <button class="green-style">
-            <span class="send-message">
-                {{sendMessage}}
-            </span>
-        </button>
-    </form>
-</div>
+<h2 class="main-title">
+    {{mainTitle}}
+</h2>
+<p class="description">
+    {{description}}
+</p>
+<form class="form-my" action="/action_page.php">
+    <div class="row">
+        <input type="text" class="form-name" name="name" placeholder="Your Name" size="20">
+        <input type="email" class="form-email" name="email" placeholder="Your Email"><br><br>
+    </div>
+    <input type="text" class="title" name="form-title" placeholder="Your Title" size="20"><br><br>
+    <textarea class="comment" name="form-comment" placeholder="Your Comment"></textarea><br><br>
+    <button class="green-style">
+        <span class="button-name">
+            {{buttonName}}
+        </span>
+    </button>
+</form>

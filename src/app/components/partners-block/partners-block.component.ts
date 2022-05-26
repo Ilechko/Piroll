@@ -7,6 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartnersBlockComponent implements OnInit {
 
+  images = [
+    {
+      src: "/assets/pictures/partners/1.jpg",
+      alt: "partners"
+    },
+    {
+      src: "/assets/pictures/partners/2.jpg",
+      alt: "partners"
+    },
+    {
+      src: "/assets/pictures/partners/3.jpg",
+      alt: "partners"
+    },
+    {
+      src: "/assets/pictures/partners/4.jpg",
+      alt: "partners"
+    },
+    {
+      src: "/assets/pictures/partners/5.jpg",
+      alt: "partners"
+    },
+
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
