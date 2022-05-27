@@ -9,6 +9,7 @@ import { SliderBlockComponent } from './components/slider-block/slider-block.com
 import { PartnersBlockComponent } from './components/partners-block/partners-block.component';
 import { FormGruopBlockComponent } from './components/form-gruop-block/form-gruop-block.component';
 import { HeaderBlockComponent } from './components/header-block/header-block.component';
+import { FooterBlockComponent } from './components/footer-block/footer-block.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeaderBlockComponent } from './components/header-block/header-block.com
     PartnersBlockComponent,
     FormGruopBlockComponent,
     HeaderBlockComponent,
+    FooterBlockComponent,
   ],
   imports: [
     BrowserModule,
