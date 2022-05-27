@@ -9,10 +9,12 @@ export class SliderBlockComponent implements OnInit {
 
   title = "Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap"
   author = "Michael Hopkins"
+  source = [];
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

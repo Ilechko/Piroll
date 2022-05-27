@@ -1,11 +1,17 @@
 <h2 class="title">
-    <span class="text-style-big">“</span>
-    {{title}}
-    <span class="text-style-big">”</span>
+  <span class="fs30">“</span>
+  {{ title }}
+  <span class="fs30">”</span>
 </h2>
-<p class="author">{{author}}</p>
+<p class="author">{{ author }}</p>
+<!-- <div class="container-circle">
+  <div class="circle"></div>
+  <div class="circle-active"></div>
+  <div class="circle"></div>
+</div> -->
+
 <div class="container-circle">
-    <div class="circle"></div>
-    <div class="circle-active"></div>
-    <div class="circle"></div>
+    <div *ngFor="let circle of source" class="circle" ></div>
 </div>
+<!-- click => active -->
+<!-- div -> link -> button -->
