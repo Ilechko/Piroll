@@ -36,25 +36,8 @@
   text-transform: uppercase;
 }
 
-.container-circle {
+.row-circles {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.circle,
-.circle-active {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #b0e8e6;
-  margin-top: 109px;
-}
-
-.circle-active {
-  width: 10px;
-  height: 10px;
-  margin-left: 9px;
-  margin-right: 9px;
-  background-color: #fff;
 }
