@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slider-button',
@@ -7,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderButtonComponent implements OnInit {
 
-  active: boolean = false;
+  active!: boolean;
+
 
   changeProperty(): void {
     this.active = !this.active
   }
+
+
+  @Input()
+  inSliderButton!: string
+
 
 
 

@@ -6,6 +6,6 @@
 <p class="author">{{ author }}</p>
 <div class="row-circles">
     <div *ngFor="let item of source">
-        <app-slider-button></app-slider-button>
+        <app-slider-button title="{{item.nameButton}}" [inSliderButton]="item.class"></app-slider-button>
     </div>
 </div>

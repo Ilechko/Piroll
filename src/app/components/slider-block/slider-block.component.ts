@@ -1,8 +1,4 @@
-import { Component, Directive, HostBinding, HostListener, OnInit } from '@angular/core';
-
-// @Directive ({
-//   selector: 'appSliderBlock'
-// })
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slider-block',
@@ -16,15 +12,20 @@ export class SliderBlockComponent implements OnInit {
   author = "Michael Hopkins"
   source = [
     {
-      class: 'circle-test'
+      class: 'circle',
+      nameButton: '1'
     },
     {
-      class: 'circle-test'
+      class: 'circle-active',
+      nameButton: '2'
     },
     {
-      class: 'circle-test'
+      class: 'circle',
+      nameButton: '3'
     }
   ];
+
+
 
 
   constructor() { }
