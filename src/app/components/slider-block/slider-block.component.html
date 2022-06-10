@@ -9,3 +9,8 @@
         <app-slider-button title="{{item.nameButton}}" [inSliderButton]="item.class"></app-slider-button>
     </div>
 </div>
+
+<div *ngFor="let item of test" class="block" [class.active-block]="item.isActive" (click)="makeActive(item)">
+  {{item.title}}
+</div>
+

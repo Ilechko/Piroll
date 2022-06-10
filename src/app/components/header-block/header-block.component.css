@@ -54,6 +54,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-left: 6%;
+    /* can be removed */
 }
 
 .relevant-inf-title {

@@ -27,6 +27,29 @@ export class SliderBlockComponent implements OnInit {
 
 
 
+  test = [
+    {
+      title: 'Serhiy',
+      isActive: true,
+    },
+    {
+      title: 'Maksym',
+      isActive: false,
+    },
+    {
+      title: 'Andrii',
+      isActive: false,
+    },
+  ];
+
+
+  makeActive(item: any): void {
+    this.test.forEach(it => {
+      it.isActive = false;
+    })
+
+    item.isActive = true;
+  }
 
   constructor() { }
 

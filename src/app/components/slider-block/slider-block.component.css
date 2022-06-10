@@ -41,3 +41,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.block {
+  width: 100px;
+  height: 100px;
+  background: antiquewhite;
+  margin: 20px;
+}
+
+.active-block {
+  background: yellowgreen;
+  border: 1px solid darkgray;
+}
