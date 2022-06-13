@@ -42,14 +42,21 @@
   align-items: center;
 }
 
-.block {
-  width: 100px;
-  height: 100px;
-  background: antiquewhite;
-  margin: 20px;
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #b0e8e6;
+  margin-top: 109px;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.active-block {
-  background: yellowgreen;
-  border: 1px solid darkgray;
+.circle-active {
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #fff;
 }

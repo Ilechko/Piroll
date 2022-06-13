@@ -1,16 +1,13 @@
-<h2 class="title">
-    <span class="fs30">“</span>
-    {{ title }}
-    <span class="fs30">”</span>
-</h2>
-<p class="author">{{ author }}</p>
+<div *ngIf="activeText">
+    <h2 class="title">
+        <span class="fs30">“</span>
+        {{activeText.title}}
+        <span class="fs30">”</span>
+    </h2>
+    <p class="author">{{activeText.author}}</p>
+</div>
 <div class="row-circles">
-    <div *ngFor="let item of source">
-        <app-slider-button title="{{item.nameButton}}" [inSliderButton]="item.class"></app-slider-button>
-    </div>
+    <button *ngFor="let item of source" class="circle" [class.circle-active]="item.isActive" (click)="makeActive(item)"
+        title="{{item.nameButton}}">
+    </button>
 </div>
-
-<div *ngFor="let item of test" class="block" [class.active-block]="item.isActive" (click)="makeActive(item)">
-  {{item.title}}
-</div>
-
