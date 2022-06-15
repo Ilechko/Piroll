@@ -1,17 +1,13 @@
-<h2 class="title">
-  <span class="fs30">“</span>
-  {{ title }}
-  <span class="fs30">”</span>
-</h2>
-<p class="author">{{ author }}</p>
-<!-- <div class="container-circle">
-  <div class="circle"></div>
-  <div class="circle-active"></div>
-  <div class="circle"></div>
-</div> -->
-
-<div class="container-circle">
-    <div *ngFor="let circle of source" class="circle" ></div>
+<div *ngIf="activeText">
+    <h2 class="title">
+        <span class="fs30">“</span>
+        {{activeText.title}}
+        <span class="fs30">”</span>
+    </h2>
+    <p class="author">{{activeText.author}}</p>
 </div>
-<!-- click => active -->
-<!-- div -> link -> button -->
+<div class="row-circles">
+    <button *ngFor="let item of source" class="circle" [class.circle-active]="item.isActive" (click)="makeActive(item)"
+        title="{{item.nameButton}}">
+    </button>
+</div>

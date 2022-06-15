@@ -36,25 +36,27 @@
   text-transform: uppercase;
 }
 
-.container-circle {
+.row-circles {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.circle,
-.circle-active {
-  width: 6px;
-  height: 6px;
+.circle {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #b0e8e6;
   margin-top: 109px;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .circle-active {
-  width: 10px;
-  height: 10px;
-  margin-left: 9px;
-  margin-right: 9px;
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: #fff;
 }
