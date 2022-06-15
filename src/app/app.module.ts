@@ -1,3 +1,8 @@
+import { ChessBlockComponent } from './components/chess-block/chess-block.component';
+import { InformationsBlockComponent } from './components/informations-block/informations-block.component';
+import { SkillsBlockComponent } from './components/skills-block/skills-block.component';
+import { SignatureBlockComponent } from './components/signature-block/signature-block.component';
+import { HeaderBlockComponent } from './components/header-block/header-block.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,6 +24,13 @@ import { HeaderBlockComponent } from './components/header-block/header-block.com
     PartnersBlockComponent,
     FormGruopBlockComponent,
     HeaderBlockComponent,
+<<<<<<< HEAD
+=======
+    SignatureBlockComponent,
+    SkillsBlockComponent,
+    InformationsBlockComponent,
+    ChessBlockComponent,
+>>>>>>> navbar
   ],
   imports: [
     BrowserModule,
