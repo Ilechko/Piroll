@@ -1,35 +1,33 @@
 <div class="container">
-    <div class="line-loading">
-        <h2 class="title-line-loading">
-        {{titleLoad}}
-        </h2>
-        <div class="design-line-loading">
-        <div class="info-description-design">
-            <p>{{descDesign}}</p>
-            <p>{{progLoadDesign}}</p>
-        </div>
-        <progress id="" max="100" value="75">
-        </progress>
+    <div class="info-line-loading">
+        <div class="title-line-loading">
+            <h2>
+            {{titleLoad}}
+            </h2>
         </div>
 
-        <div class="development-line-loading">
-        <div class="info-description-development">
-            <p>{{descDevelopment}}</p>
-            <p>{{progLoadDevelopment}}</p>
-        </div>
-        <progress id="" max="100" value="75">
-        </progress>
-        </div>
+        <div class="line-loading">
+            <div class="info-procent">
+                <p>{{descDesign}}</p>
+                <p>{{progLoadDesign}}</p>
+            </div>
+            <progress id="" max="100" value="75">
+            </progress>
 
-        <div class="marketing-line-loading">
-        <div class="info-description-marketing">
-            <p>{{descMarketing}}</p>
-            <p>{{progLoadMarketing}}</p>
-        </div>
-        <progress id="" max="100" value="75">
-        </progress>
-        </div>
+            <div class="info-procent">
+                <p>{{descDevelopment}}</p>
+                <p>{{progLoadDevelopment}}</p>
+            </div>
+            <progress id="" max="100" value="90">
+            </progress>
 
+            <div class="info-procent">
+                <p>{{descMarketing}}</p>
+                <p>{{progLoadMarketing}}</p>
+            </div>
+            <progress id="" max="100" value="65">
+            </progress>
+        </div>
     </div>
     <div class="clean-block"></div>
 </div>
