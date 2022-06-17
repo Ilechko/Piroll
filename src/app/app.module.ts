@@ -1,3 +1,4 @@
+import { SignatureBlockComponent } from './components/signature-block/signature-block.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,6 +20,7 @@ import { HeaderBlockComponent } from './components/header-block/header-block.com
     PartnersBlockComponent,
     FormGruopBlockComponent,
     HeaderBlockComponent,
+    SignatureBlockComponent
   ],
   imports: [
     BrowserModule,
