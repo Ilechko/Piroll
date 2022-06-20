@@ -7,16 +7,17 @@
 }
 
 .row {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
-.tabs {
+.tab {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 25%;
 }
 
 .title {

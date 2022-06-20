@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderBlockComponent implements OnInit {
 
+  mainTitle = 'We Design and Develop';
+  description = 'We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.';
+
   constructor() { }
 
   ngOnInit(): void {
