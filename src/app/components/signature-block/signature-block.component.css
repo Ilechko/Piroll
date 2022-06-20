@@ -13,3 +13,13 @@
     flex-wrap: wrap;
     width: 50%;
 }
+
+@media (max-width: 600px) {
+.general-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+}
