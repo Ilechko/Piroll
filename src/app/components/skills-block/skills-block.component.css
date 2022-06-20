@@ -1,94 +1,106 @@
 .container {
-  display: flex;
   width: 100%;
-  margin-top: 100px;
+  height: 400px;
+  display: flex;
 }
 
-.one {
+.title-line-loading{
+  display: flex;
+  justify-content: flex-start;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.info-line-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
+  height: 100%;
+  flex-direction: column;
+  background-color: #f8f9f9;
 }
 
-.Professional-Skills {
-  margin: 164px 306px 0px 100px;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.8;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #171717;
+.info-procent {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 0;
+  margin-top: 25px;
 }
 
-.UIUX-Design-75 {
-  margin: 39px 356px 19px 98px;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: left;
-  color: #000;
+p {
+  margin: 0;
+  font-size: smaller;
+  font-weight: bold;
 }
 
-.rectangle2,
-.rectangle22,
-.rectangle32 {
-  width: 500px;
-  height: 3px;
-  margin: 19px 85px 0px 98px;
-  background-color: #d8d8d8;
+progress {
+  width: 350px;
 }
 
-.rectangle1 {
-  width: 336px;
-  height: 3px;
-  background-color: #10c9c3;
+.progress-container-design {
+  position: relative;
+  display: inline-block;
+  background: #c2cad2;
+  height: 4px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.web-development-90 {
-  margin: 41px 309px 20px 98px;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: left;
-  color: #000;
+.progress-container-design::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  background: #10c9c3;
 }
 
-.rectangle21 {
-  width: 428px;
-  height: 3px;
-  background-color: #10c9c3;
+.progress-container-drvelopment {
+  position: relative;
+  display: inline-block;
+  background: #c2cad2;
+  height: 4px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.marketing-65 {
-  margin: 41px 369px 20px 98px;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: 1.2px;
-  text-align: left;
-  color: #000;
+.progress-container-drvelopment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90%;
+  background: #10c9c3;
 }
 
-.rectangle31 {
-  width: 280px;
-  height: 3px;
-  background-color: #10c9c3;
+.progress-container-marketing {
+  position: relative;
+  display: inline-block;
+  background: #c2cad2;
+  height: 4px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.two {
+.progress-container-marketing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 65%;
+  background: #10c9c3;
+}
+
+.clean-block {
   width: 50%;
-  height: 570px;
-  background-color: #e9e9e9;
+  height: 100%;
+  background-color: rgb(229, 229, 229);
 }
+
