@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsBlockComponent implements OnInit {
 
   titleLoad = 'Professional Skills';
-  descDesign = 'UI/UX Design';
+  descDesign = 'UI/UX DESIGN';
   progLoadDesign = '75%';
-  descDevelopment = 'web Development';
+  descDevelopment = 'WEB DEVELOPMRNT';
   progLoadDevelopment = '90%';
-  descMarketing = 'Marketing';
+  descMarketing = 'MARKETING';
   progLoadMarketing = '65%';
 
   constructor() { }
