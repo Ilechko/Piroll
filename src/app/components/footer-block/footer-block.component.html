@@ -1,28 +1,31 @@
-<div class="first-columns">
-    <h3 class="title">
+<div class="columns">
+    <p class="title">
         {{title}}
-    </h3>
+    </p>
     <p class="description">
         {{description}}
     </p>
 </div>
-<div class="second-columns">
+<div class="columns">
     <p class="contact-information">
-        {{email}} <br>
+        {{email}}
+    </p>
+    <p class="contact-information">
         {{phone}}
     </p>
 </div>
-<div class="third-columns">
-<span class="Projects-About-Services-Carreer">
-    Projects <br>
-    About <br>
-    Services <br>
-    Carreer
-</span>
+<div class="columns">
+    <a *ngFor="let item of footerLinkOne" href="{{item.href}}" class="link">
+        <span>{{item.name}}</span>
+    </a>
 </div>
-<div class="fourth-columns">
-
+<div class="columns">
+    <a *ngFor="let item of footerLinkTwo" href="{{item.href}}" class="link">
+        <span>{{item.name}}</span>
+    </a>
 </div>
-<div class="fifth-columns">
-
+<div class="columns">
+    <a *ngFor="let item of socialLink" href="{{item.href}}" class="link linkPlus">
+        <span>{{item.name}}</span>
+    </a>
 </div>
