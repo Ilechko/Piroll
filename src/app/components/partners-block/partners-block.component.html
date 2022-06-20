@@ -1,7 +1,3 @@
-<div class="container">
-    <img class="img1" src="/assets/pictures/partners/1.jpg" alt="partners">
-    <img class="img2" src="/assets/pictures/partners/2.jpg" alt="partners">
-    <img class="img3" src="/assets/pictures/partners/3.jpg" alt="partners">
-    <img class="img4" src="/assets/pictures/partners/4.jpg" alt="partners">
-    <img class="img5" src="/assets/pictures/partners/5.jpg" alt="partners">
+<div *ngFor="let item of images" class="container">
+    <img src="{{item.src}}" alt="{{item.alt}}" class="img">
 </div>

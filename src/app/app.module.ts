@@ -13,7 +13,7 @@ import { TabsBlockComponent } from './components/tabs-block/tabs-block.component
 import { SliderBlockComponent } from './components/slider-block/slider-block.component';
 import { PartnersBlockComponent } from './components/partners-block/partners-block.component';
 import { FormGruopBlockComponent } from './components/form-gruop-block/form-gruop-block.component';
-import { SliderButtonComponent } from './components/slider-block/slider-button/slider-button.component';
+import { FooterBlockComponent } from './components/footer-block/footer-block.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import { SliderButtonComponent } from './components/slider-block/slider-button/s
     SliderBlockComponent,
     PartnersBlockComponent,
     FormGruopBlockComponent,
+    FooterBlockComponent,
     HeaderBlockComponent,
     SignatureBlockComponent,
     SkillsBlockComponent,

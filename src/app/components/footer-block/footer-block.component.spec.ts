@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SliderButtonComponent } from './slider-button.component';
+import { FooterBlockComponent } from './footer-block.component';
 
-describe('SliderButtonComponent', () => {
-  let component: SliderButtonComponent;
-  let fixture: ComponentFixture<SliderButtonComponent>;
+describe('FooterBlockComponent', () => {
+  let component: FooterBlockComponent;
+  let fixture: ComponentFixture<FooterBlockComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SliderButtonComponent ]
+      declarations: [ FooterBlockComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SliderButtonComponent);
+    fixture = TestBed.createComponent(FooterBlockComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

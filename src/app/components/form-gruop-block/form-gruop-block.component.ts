@@ -9,7 +9,7 @@ export class FormGruopBlockComponent implements OnInit {
 
   mainTitle = "Need a Project?"
   description = "Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful."
-  sendMessage = "send message"
+  buttonName = "send message"
 
   constructor() { }
 

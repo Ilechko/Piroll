@@ -1,5 +1,4 @@
-.container {
-  width: 100vw;
+:host {
   background-color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -9,37 +8,9 @@
   margin-bottom: 64px;
 }
 
-.img1 {
-  width: 89px;
-  height: 65px;
+.img {
   object-fit: contain;
   opacity: 0.5;
-}
-
-.img2 {
-  width: 98px;
-  height: 58px;
-  object-fit: contain;
-  opacity: 0.5;
-}
-
-.img3 {
-  width: 127px;
-  height: 72px;
-  object-fit: contain;
-  opacity: 0.5;
-}
-
-.img4 {
-  width: 96px;
-  height: 72px;
-  object-fit: contain;
-  opacity: 0.5;
-}
-
-.img5 {
-  width: 89px;
-  height: 65px;
-  object-fit: contain;
-  opacity: 0.5;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
