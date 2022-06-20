@@ -40,7 +40,8 @@ export class SliderBlockComponent implements OnInit {
     })
     item.isActive = true;
   }
-  
+
+
 
   constructor() { }
 
