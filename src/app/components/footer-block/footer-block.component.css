@@ -1,11 +1,8 @@
 :host {
-  width: 100%;
   display: flex;
   background-color: #141414;
   justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 40px 10px 90px 10px;
   flex-wrap: wrap;
 }
 
@@ -17,6 +14,7 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  margin-top: 50px;
 }
 
 .title {
@@ -29,7 +27,6 @@ a {
   text-align: left;
   color: #fff;
   margin: 0px;
-  max-width: 65%;
 }
 
 .description {
@@ -61,4 +58,14 @@ a {
 .linkPlus {
   margin-left: 70px;
   margin-right: 130px;
+}
+
+@media (max-width: 480px) {
+  .link {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
 }
