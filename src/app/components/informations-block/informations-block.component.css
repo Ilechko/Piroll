@@ -1,0 +1,22 @@
+.block {
+  background-color: #10c9c3;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.block-info {
+  display: flex;
+  align-items: center;
+  margin: 80px;
+  
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+p {
+  color: white;
+}
