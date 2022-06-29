@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./informations-block.component.css']
 })
 export class InformationsBlockComponent implements OnInit {
+  numberInfo = '548';
+  descInfo = 'projects completed';
+  numberWorking = '1465';
+  descWorking = 'working hours';
+  numberFeedbacks = '612';
+  descFeedbacks = 'positive feedbacks';
+  numberClients = '735';
+  descClients = 'happy clients';
 
   constructor() { }
 
