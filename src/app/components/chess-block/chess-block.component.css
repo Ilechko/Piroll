@@ -1,7 +1,13 @@
 
+/* :host {
+  width: 100%;
+  display: flex;
+} */
+
 .img-row {
   width: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .image {
@@ -21,6 +27,7 @@
 .image:hover{
   background-color: #202020;
 }
+/* Стилізуємо тільки по класам через специфічність css */
 
 img {
   width: 100%;
