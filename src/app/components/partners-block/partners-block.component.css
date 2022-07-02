@@ -4,23 +4,20 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 64px;
-  margin-bottom: 64px;
-  /* margin- padding бо тут внутрішній відступ */
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .img {
   object-fit: contain;
   opacity: 0.5;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 10px;
 }
 
 @media (max-width: 480px) {
-  .container {
-    width: 50%;
+  .img {
+    width: 40%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
   }
 }
