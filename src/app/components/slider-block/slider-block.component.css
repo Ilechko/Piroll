@@ -1,6 +1,5 @@
 :host {
   width: 100%;
-  display: block;
   background-color: #10c9c3;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@
 
 .title {
   width: 70vw;
+  min-height: 130px;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -60,4 +60,40 @@
   margin-left: 5px;
   margin-right: 5px;
   background-color: #fff;
+}
+
+@media (max-width : 1024px) {
+  .title {
+    min-height: 165px;
+  }
+}
+
+@media (max-width : 768px) {
+  .title {
+    min-height: 200px;
+  }
+}
+
+@media (max-width : 640px) {
+  .title {
+    min-height: 270px;
+  }
+}
+
+@media (max-width : 480px) {
+  .title {
+    min-height: 350px;
+  }
+}
+
+@media (max-width : 375px) {
+  .title {
+    min-height: 380px;
+  }
+}
+
+@media (max-width : 320px) {
+  .title {
+    min-height: 500px;
+  }
 }

@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   margin-top: 64px;
   margin-bottom: 64px;
+  /* margin- padding бо тут внутрішній відступ */
 }
 
 .img {
