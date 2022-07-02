@@ -30,6 +30,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  /* ДЛя чого ці стилі */
+  /* justify-content: center; */
+    /* align-items: stretch; */
 }
 
 .form-name {
