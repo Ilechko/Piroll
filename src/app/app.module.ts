@@ -14,6 +14,7 @@ import { SliderBlockComponent } from './components/slider-block/slider-block.com
 import { PartnersBlockComponent } from './components/partners-block/partners-block.component';
 import { FormGruopBlockComponent } from './components/form-gruop-block/form-gruop-block.component';
 import { FooterBlockComponent } from './components/footer-block/footer-block.component';
+import { Video2BlockComponent } from './components/video2-block/video2-block.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterBlockComponent } from './components/footer-block/footer-block.com
     SkillsBlockComponent,
     InformationsBlockComponent,
     ChessBlockComponent,
+    Video2BlockComponent,
   ],
   imports: [
     BrowserModule,
