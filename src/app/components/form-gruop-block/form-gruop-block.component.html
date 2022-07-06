@@ -6,17 +6,10 @@
 </p>
 <form class="form-my" action="/action_page.php">
     <div class="row">
-        <!-- form-name i  form-email мають багато подібних стилів. Можна створити спільний клас для них і 1 окремий для тих
-        речей в яких вони відрізняються-->
-        <input type="text" class="form-name" name="name" placeholder="Your Name" size="20">
-        <input type="email" class="form-email" name="email" placeholder="Your Email"><br><br>
+        <input type="text" class="your-data form-name" name="name" placeholder="Your Name" size="30">
+        <input type="email" class="your-data" name="email" placeholder="Your Email"><br><br>
     </div>
-    <input type="text" class="form-title" name="title" placeholder="Your Title" size="20"><br><br>
+    <input type="text" class="form-title" name="title" placeholder="Your Title" size="30"><br><br>
     <textarea class="form-comment" name="comment" placeholder="Your Comment"></textarea><br><br>
-    <button class="green-style">
-        <!-- Мені здається що цей спан тут зайвий. Всі стилі можна на пряму в кнопці прописати -->
-        <span class="button-name">
-            {{buttonName}}
-        </span>
-    </button>
+    <button class="green-style button-name">{{buttonName}}</button>
 </form>

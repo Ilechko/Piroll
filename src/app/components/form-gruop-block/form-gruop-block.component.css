@@ -1,5 +1,5 @@
 :host {
-  width: 100%;
+  /* width: 100%; */
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -12,12 +12,13 @@
   font-size: 30px;
   font-weight: 500;
   line-height: 2.8;
-  letter-spacing: 0.3px;
+  /* letter-spacing: 0.3px; */
   text-align: center;
   color: #1d1d1d;
 }
 
 .description {
+  margin: 0 10px 10px 10px;
   font-family: NunitoSans;
   font-size: 16px;
   line-height: 1.5;
@@ -28,33 +29,20 @@
 .form-my {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  /* ДЛя чого ці стилі */
-  /* justify-content: center; */
-    /* align-items: stretch; */
 }
 
-.form-name {
+.your-data {
   width: 320px;
   height: 48px;
   font-family: 'Montserrat',
     sans-serif;
   font-size: 15px;
-  margin-right: 30px;
   background-color: #fff;
   border: none;
 }
 
-.form-email {
-  width: 320px;
-  height: 48px;
-  font-family: 'Montserrat',
-    sans-serif;
-  font-size: 15px;
-  background-color: #fff;
-  border: none;
-  margin-top: 10px;
+.form-name {
+  margin: 0 30px 15px 0;
 }
 
 .form-title {
@@ -93,4 +81,5 @@
   letter-spacing: 1.2px;
   text-align: center;
   color: #fff;
+  text-transform: uppercase;
 }

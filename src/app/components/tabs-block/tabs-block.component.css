@@ -10,6 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  justify-content: center;
 }
 
 .tab {
@@ -36,4 +37,11 @@
   line-height: 1.5;
   text-align: center;
   color: #787878;
+  margin: 5px;
+}
+
+@media (max-width: 480px) {
+  .tab {
+    width: 45%;
+  }
 }

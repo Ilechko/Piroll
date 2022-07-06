@@ -7,7 +7,10 @@
     </p>
 </div>
 <div class="video-container">
-    <div class="play-button">
-        <div class="arrow"></div>
-    </div>
+    <video poster="/assets/backgraundGeyPaintExpert.jpg" class="video-player">
+        <source src="/assets/video.mp4" type="video/mp4">
+    </video>
+    <button class="play-stop" [class.opacity]="isActive" (click)="playStop()">
+        <div class="arrow" [class.arrow-square]="isActive"></div>
+    </button>
 </div>
