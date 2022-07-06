@@ -9,7 +9,25 @@ export class VideoBlockComponent implements OnInit {
 
   mainTitle = 'Our Work Process';
   description = 'Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.';
-  // Нюанс. Використовувати тільки одинарні скобки в ts-js файлах. + завжди ставити я то вже сам зміню. ; 
+  isActive = false;
+
+  playStop(): void {
+    let video: any = document.querySelector('.video-player');
+    if (video.paused) {
+      video.play();
+      this.isActive = true;
+      // Відображаємо картинку постера після відтворення відео
+      video.addEventListener('ended', function () {
+        video.load();
+      }, false);
+    } else {
+      video.pause();
+      video.addEventListener('pause', function () {
+        video.load();
+      }, false);
+      this.isActive = false;
+    }
+  }; 
 
   constructor() { }
 
