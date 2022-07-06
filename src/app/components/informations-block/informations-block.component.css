@@ -1,4 +1,3 @@
-
 .block {
   background-color: #10c9c3;
   display: flex;
@@ -6,13 +5,16 @@
   flex-wrap: wrap;
 }
 
+/* block -> :host. Краще зразу привичити себе не плодити зайві теги */
+
 .block-info {
   display: flex;
   align-items: center;
   margin: 80px;
-  
+  /* margin -> padding бо це внутрішні відступи */
 }
 
+/* не стилізуємо по тегам. Тільки по класам */
 img {
   width: 30px;
   height: 30px;

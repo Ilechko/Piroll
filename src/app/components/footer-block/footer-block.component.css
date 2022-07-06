@@ -2,7 +2,7 @@
   display: flex;
   background-color: #141414;
   justify-content: space-around;
-  padding: 40px 10px 90px 10px;
+  padding: 90px 10px 90px 10px;
   flex-wrap: wrap;
 }
 
@@ -13,8 +13,7 @@ a {
 .columns {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
-  margin-top: 50px;
+  margin: 25px 0 25px 0;
 }
 
 .title {
@@ -24,7 +23,6 @@ a {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.18px;
-  text-align: left;
   color: #fff;
   margin: 0px;
 }
@@ -33,7 +31,6 @@ a {
   font-family: NunitoSans;
   font-size: 15px;
   line-height: 1.6;
-  text-align: left;
   color: #bcbcbc;
   max-width: 65%;
 }
@@ -42,7 +39,6 @@ a {
   font-family: NunitoSans;
   font-size: 15px;
   line-height: 1.6;
-  text-align: left;
   color: #bcbcbc;
   margin: 0px;
 }
@@ -51,21 +47,31 @@ a {
   font-family: NunitoSans;
   font-size: 15px;
   line-height: 1.6;
-  text-align: left;
   color: #bcbcbc;
 }
 
-.linkPlus {
-  margin-left: 70px;
-  margin-right: 130px;
+.link-plus {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (max-width: 1024px) {
+  .columns {
+    width: 34%;
+    align-items: center;
+  }
+
+  .description {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
   .link {
-    font-size: 20px;
+    font-size: 22px;
   }
 
-  .description {
-    font-size: 12px;
+  .columns {
+    width: 51%;
   }
 }
