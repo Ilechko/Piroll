@@ -8,9 +8,9 @@
 .block-info {
   display: flex;
   align-items: center;
-  margin: 80px;
-  
+  padding: 80px;
 }
+
 
 img {
   width: 30px;
