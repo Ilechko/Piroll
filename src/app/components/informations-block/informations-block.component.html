@@ -1,5 +1,14 @@
 <div class="block">
-    <div class="block-info">
+    <div *ngFor="let blockinfo of infofrmation" class="block-info">
+        <img src="" alt="">
+        <div class="info-projects">
+            <p>{{blockinfo.numberInfo}}</p>
+            <p>{{blockinfo.descInfo}}</p>
+        </div>
+    </div>
+
+    
+    <!-- <div class="block-info">
         <img src="" alt="">
         <div class="info-projects">
             <p>{{numberInfo}}</p>
@@ -26,5 +35,5 @@
             <p>{{numberClients}}</p>
             <p>{{descClients}}</p>
         </div>
-    </div>
+    </div> -->
 </div>
