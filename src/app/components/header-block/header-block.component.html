@@ -1,33 +1,30 @@
-<!-- Тут треба трошки переробити. На малих екранах виглядає не пропорційно
-Також ти задав статичну висоту а після того 10% і 90% висоту для елементів. Кращою практикою являються відступи (падінги і марджіни)для
-елементів і без статичної висоти контейнера коли це 600пікселів. ТО не проблема, якщо сам контейнер в тебе буде трохи менший ніж в дизайні. 
-.relevant-info-container вилазить за межі контейнера на малих екранах -->
-
 <div class="navbar">
   <div class="header">
     <div class="icon">
       <img src="/assets/images/logo.png" alt="image">
     </div>
     <div class="menu-link-container">
-      <a mat-list-item href="###" class="home-link link">
+      <!-- *ngFor -->
+      <!-- прикліці змінюється активна лінка -->
+      <a href="###" class="link active-link">
         <span>HOME</span>
       </a>
-      <a mat-list-item href="###" class="link">
+      <a href="###" class="link">
         <span>ABOUT</span>
       </a>
-      <a mat-list-item href="###" class="link">
+      <a href="###" class="link">
         <span>WORK</span>
       </a>
-      <a mat-list-item href="###" class="link">
+      <a href="###" class="link">
         <span>PROCESS</span>
       </a>
-      <a mat-list-item href="###" class="link">
+      <a href="###" class="link">
         <span>SERVICES</span>
       </a>
-      <a mat-list-item href="###" class="link">
+      <a href="###" class="link">
         <span>TESTIMONIALS</span>
       </a>
-      <a mat-list-item href="###" class="link">
+      <a href="###" class="link">
         <span>CONTACT</span>
       </a>
     </div>
@@ -40,7 +37,7 @@
       <p class="relevant-info-description-content">
           {{description}}
       </p>
-      <button class="relevant-info-contact-button-component">contact us</button>
+      <button class="relevant-info-contact-button-component">Contact us</button>
     </div>
   </div>
 </div>

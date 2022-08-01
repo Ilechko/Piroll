@@ -1,19 +1,15 @@
 
-/* :host {
+:host {
   width: 100%;
   display: flex;
-} */
-
-.img-row {
-  width: 100%;
-  display: flex;
-  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.image {
+.image-container {
   width: 25%;
   height: 300px;
-  min-width: 100px;
+  min-width: 200px;
 }
 
 .img-gray {
@@ -24,12 +20,6 @@
   background-color: #dedede;
 }
 
-.image:hover{
+.image-container:hover{
   background-color: #202020;
-}
-/* Стилізуємо тільки по класам через специфічність css */
-
-img {
-  width: 100%;
-  height: 100%;
 }

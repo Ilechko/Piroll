@@ -1,1 +1,1 @@
-<img *ngFor="let item of images" src="{{item.src}}" alt="{{item.alt}}" class="img">
+<img *ngFor="let item of images" [src]="item.src" [alt]="item.alt" class="img">

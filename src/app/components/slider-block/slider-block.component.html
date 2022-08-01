@@ -1,15 +1,13 @@
 <div *ngIf="activeText">
-    <h2 class="title">
-        <span class="fs30">“</span>
-        {{activeText.title}}
-        <span class="fs30">”</span>
-    </h2>
-    <p class="author">{{activeText.author}}</p>
+  <h2 class="title">
+    <span class="fs30">“</span>
+    {{activeText.title}}
+    <span class="fs30">”</span>
+  </h2>
+  <p class="author">{{activeText.author}}</p>
 </div>
 <div class="row-circles">
-    <button *ngFor="let item of source" class="circle" [class.circle-active]="item.isActive" (click)="makeActive(item)"
-        title="{{item.nameButton}}">
-    </button>
+  <button *ngFor="let item of source" class="circle" [class.circle-active]="item.isActive" (click)="makeActive(item)"
+    [title]="item.nameButton">
+  </button>
 </div>
-
-<!-- Супер. Тільки при зміні акивної кпонки змінюєиться розмір блоку -->

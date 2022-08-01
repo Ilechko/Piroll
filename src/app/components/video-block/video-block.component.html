@@ -1,16 +1,17 @@
 <div class="text-container">
-    <h1 class="title">
-        {{mainTitle}}
-    </h1>
-    <p class="description">
-        {{description}}
-    </p>
+  <h1 class="title">
+    {{mainTitle}}
+  </h1>
+  <p class="description">
+    {{description}}
+  </p>
 </div>
 <div class="video-container">
-    <video poster="/assets/backgraundGeyPaintExpert.jpg" class="video-player">
-        <source src="/assets/video.mp4" type="video/mp4">
-    </video>
-    <button class="play-stop" [class.opacity]="isActive" (click)="playStop()">
-        <div class="arrow" [class.arrow-square]="isActive"></div>
-    </button>
+  <video #video poster="/assets/backgraundGeyPaintExpert.jpg" class="video-player" (ended)="loadVideo()"
+    (pause)="loadVideo()">
+    <source src="/assets/video.mp4" type="video/mp4">
+  </video>
+  <button class="play-stop" [class.opacity]="isActive" (click)="toggleVideo(video)">
+    <div class="arrow" [class.arrow-square]="isActive"></div>
+  </button>
 </div>
