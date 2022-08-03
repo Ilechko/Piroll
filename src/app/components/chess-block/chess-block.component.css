@@ -1,25 +1,47 @@
-
 :host {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .image-container {
   width: 25%;
-  height: 300px;
-  min-width: 200px;
+  height: 22vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-gray {
   background-color: #848484;
 }
 
-.img-witegray {
+.img-whitegray {
   background-color: #dedede;
 }
 
-.image-container:hover{
+.img {
+  width: 3vw;
+  height: 2vw;
+}
+
+.show {
+  display: none;
+}
+
+.background-black {
   background-color: #202020;
 }
+
+.load-more-work{
+  width: 100%;
+  padding: 46px 0px 45px 0px;
+  background-color: #f5f5f5;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #8e8e8e;
+  text-transform: uppercase;
+}
+

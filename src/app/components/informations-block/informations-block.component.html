@@ -1,41 +1,7 @@
-<div class="block">
-    <!-- Давай виведем всі block-info через *ngFor Приклад в слайдер блок -->
-    <div class="block-info">
-    <div *ngFor="let blockinfo of infofrmation" class="block-info">
-        <img src="" alt="">
-        <div class="info-projects">
-            <p>{{blockinfo.numberInfo}}</p>
-            <p>{{blockinfo.descInfo}}</p>
-        </div>
-    </div>
-
-    
-    <!-- <div class="block-info">
-        <img src="" alt="">
-        <div class="info-projects">
-            <p>{{numberInfo}}</p>
-            <p>{{descInfo}}</p>
-        </div>
-    </div>
-    <div class="block-info">
-        <img src="" alt="">
-        <div class="info-working">
-            <p>{{numberWorking}}</p>
-            <p>{{descWorking}}</p>
-        </div>
-    </div>
-    <div class="block-info">
-        <img src="" alt="">
-        <div class="info-feedbacks">
-            <p>{{numberFeedbacks}}</p>
-            <p>{{descFeedbacks}}</p>
-        </div>
-    </div>
-    <div class="block-info">
-        <img src="" alt="">
-        <div class="info-clients">
-            <p>{{numberClients}}</p>
-            <p>{{descClients}}</p>
-        </div>
-    </div> -->
+<div *ngFor="let blockinfo of infofrmation" class="block-info">
+  <img [src]="blockinfo.src" [alt]="blockinfo.alt" class="img">
+  <div class="information">
+    <p class="info">{{blockinfo.numberInfo}}</p>
+    <p class="info text">{{blockinfo.descInfo}}</p>
+  </div>
 </div>

@@ -1,56 +1,74 @@
-/* container - >host + не стилізуй по тегам */
-.container {
+:host {
   width: 100%;
-  height: 400px;
   display: flex;
 }
 
-.title-line-loading {
-  display: flex;
-  justify-content: flex-start;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-.info-line-loading {
+.info {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
   flex-direction: column;
+  width: 50%;
   background-color: #f8f9f9;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+}
+
+.title {
+  margin-top: 0;
+  margin-left: 5vw;
+  font-family: 'Montserrat',
+    sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #171717;
+}
+
+.line-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info-procent {
+  align-self: flex-start;
+  margin-left: 5vw;
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 22vw;
   margin-top: 25px;
 }
 
-p {
+.information {
   margin: 0;
-  font-size: smaller;
-  font-weight: bold;
+  font-family: 'Montserrat',
+    sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #000;
 }
 
-progress {
-  width: 350px;
+.progress {
+  width: 90vw;
 }
 
-.progress-container-design {
+.progress-container-design,
+.progress-container-drvelopment,
+.progress-container-marketing {
   position: relative;
-  display: inline-block;
   background: #c2cad2;
   height: 4px;
   border-radius: 6px;
   overflow: hidden;
+  width: 80%;
+  align-self: center;
 }
 
-.progress-container-design::before {
+.progress-container-design::before,
+.progress-container-drvelopment::before,
+.progress-container-marketing::before {
   content: "";
   position: absolute;
   top: 0;
@@ -60,92 +78,48 @@ progress {
   background: #10c9c3;
 }
 
-.progress-container-drvelopment {
-  position: relative;
-  display: inline-block;
-  background: #c2cad2;
-  height: 4px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
 .progress-container-drvelopment::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
   width: 90%;
-  background: #10c9c3;
-}
-
-.progress-container-marketing {
-  position: relative;
-  display: inline-block;
-  background: #c2cad2;
-  height: 4px;
-  border-radius: 6px;
-  overflow: hidden;
 }
 
 .progress-container-marketing::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
   width: 65%;
-  background: #10c9c3;
 }
 
 .clean-block {
   width: 50%;
-  height: 100%;
   background-color: rgb(229, 229, 229);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .clean-block {
     width: 0;
     height: 0;
   }
-  .info-line-loading {
-    display: flex;
-    justify-content: center;
+
+  .info {
     align-items: center;
     width: 100%;
-    height: 100%;
-    flex-direction: column;
-    background-color: #f8f9f9;
+  }
+
+  .info-procent {
+    margin-left: 10vw;
+    width: 40vw;
   }
 }
 
-@media (max-width: 400px) {
-  progress {
-    width: 150px;
-  }
+@media (max-width: 500px) {
   .info-procent {
-    display: flex;
-    justify-content: space-around;
-    width: 120px;
-    margin-top: 25px;
-  }
-  p {
-    margin: 0;
-    font-size: xx-small;
-    font-weight: bold;
+    width: 60vw;
   }
 }
 
-@media (max-width: 200px) {
-  progress {
-    width: 100px;
-  }
+@media (max-width: 313px) {
   .info-procent {
-    display: flex;
-    justify-content: space-around;
-    width: 100px;
-    margin-top: 25px;
+    width: 70vw;
+  }
+
+  .title {
+    text-align: center;
   }
 }
-/* З медіа прям дуже гарно побавився))) */

@@ -1,25 +1,50 @@
-.block {
+:host {
   background-color: #10c9c3;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  width: 100%;
 }
-
-/* block -> :host. Краще зразу привичити себе не плодити зайві теги */
 
 .block-info {
   display: flex;
   align-items: center;
-  margin: 80px;
-  /* margin -> padding бо це внутрішні відступи */
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  width: 25%;
 }
 
-/* не стилізуємо по тегам. Тільки по класам */
-img {
-  width: 30px;
-  height: 30px;
+.img {
+  width: 44px;
+  height: 44px;
+  margin-right: 25px;
 }
 
-p {
-  color: white;
+.info {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.67;
+  letter-spacing: 0.54px;
+  text-align: left;
+  color: #fff;
+  margin: 0;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 2.5;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 1000px) {
+  :host {
+    flex-wrap: wrap;
+  }
+  .block-info {
+    width: 40%;
+  }
 }

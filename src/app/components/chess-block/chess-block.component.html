@@ -1,24 +1,5 @@
-<div class="image-container img-gray">
-  <img src="" alt="" />
+<div *ngFor="let item of source" [class]="item.class" (mouseover)="show(item)" (mouseout)="hide(item)"
+  [class.background-black]="!item.isActive">
+  <img [src]="item.imgSrc" [alt]="item.alt" [class.show]="item.isActive" class="img">
 </div>
-<div class="image-container img-witegray">
-  <img src="" alt="" />
-</div>
-<div class="image-container img-gray">
-  <img src="" alt="" />
-</div>
-<div class="image-container img-witegray">
-  <img src="" alt="" />
-</div>
-<div class="image-container img-witegray">
-  <img src="" alt="" />
-</div>
-<div class="image-container img-gray">
-  <img src="" alt="" />
-</div>
-<div class="image-container img-witegray">
-  <img src="" alt="" />
-</div>
-<div class="image-container img-gray">
-  <img src="" alt="" />
-</div>
+<div class="load-more-work">load more work</div>

@@ -1,43 +1,15 @@
-<div class="navbar">
-  <div class="header">
-    <div class="icon">
-      <img src="/assets/images/logo.png" alt="image">
-    </div>
-    <div class="menu-link-container">
-      <!-- *ngFor -->
-      <!-- прикліці змінюється активна лінка -->
-      <a href="###" class="link active-link">
-        <span>HOME</span>
-      </a>
-      <a href="###" class="link">
-        <span>ABOUT</span>
-      </a>
-      <a href="###" class="link">
-        <span>WORK</span>
-      </a>
-      <a href="###" class="link">
-        <span>PROCESS</span>
-      </a>
-      <a href="###" class="link">
-        <span>SERVICES</span>
-      </a>
-      <a href="###" class="link">
-        <span>TESTIMONIALS</span>
-      </a>
-      <a href="###" class="link">
-        <span>CONTACT</span>
-      </a>
-    </div>
+<div class="header">
+  <img class="icon" [src]="logo" alt="image">
+
+  <div class="menu">
+    <a *ngFor="let item of links" [href]="item.href" [class]="item.class">{{item.title}}</a>
   </div>
-  <div class="nav-bord">
-    <div class="relevant-info-container">
-      <h1 class="relevant-inf-title">
-          {{mainTitle}}
-        </h1>
-      <p class="relevant-info-description-content">
-          {{description}}
-      </p>
-      <button class="relevant-info-contact-button-component">Contact us</button>
-    </div>
+</div>
+
+<div class="nav-bord">
+  <div class="info">
+    <h1 class="title">{{mainTitle}}</h1>
+    <p class="description">{{description}}</p>
+    <button class="button" onclick="window.location.href = 'https://w3docs.com';">{{button}}</button>
   </div>
 </div>

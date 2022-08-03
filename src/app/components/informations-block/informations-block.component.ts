@@ -10,30 +10,36 @@ export class InformationsBlockComponent implements OnInit {
   infofrmation = [
     {
       id: 1,
-      numberInfo: '548',
-      descInfo: 'projects completed',
+      numberInfo: `548`,
+      descInfo: `projects completed`,
+      src: `/assets/images/pe-7-s-portfolio.png`,
+      alt: `portfolio`,
     },
     {
       id: 2,
-      numberWorking: '1465',
-      descWorking: 'working hours',
+      numberInfo: `1465`,
+      descInfo: `working hours`,
+      src: `/assets/images/pe-7-s-clock.png`,
+      alt: `clock`,
     },
     {
       id: 3,
-      numberFeedbacks: '612',
-      descFeedbacks: 'positive feedbacks',
+      numberInfo: `612`,
+      descInfo: `positive feedbacks`,
+      src: `/assets/images/pe-7-s-star.png`,
+      alt: `star`,
     },
     {
       id: 4,
-      numberClients: '735',
-      descClients: 'happy clients',
-    }
+      numberInfo: `735`,
+      descInfo: `happy clients`,
+      src: `/assets/images/pe-7-s-like.png`,
+      alt: `like`,
+    },
   ]
-  
-  
-  
 
-  constructor() {}
 
-  ngOnInit(): void {}
+  constructor() { }
+
+  ngOnInit(): void { }
 }
